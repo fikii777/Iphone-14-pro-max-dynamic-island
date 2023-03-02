@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Dynamic Island</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="box">
+        <div class="inner">
+            <div class="island-popup">
+                <div class="content">
+                    <div class="content-item">
+                        <div class="details">
+                            <div class="imgBx">
+                                <img src="img/heart.jpg" alt="">
+                            </div>
+                            <div class="details-text">
+                                <h3>Music Title</h3>
+                                <p>Music Text</p>
+                            </div>
+                        </div>
+                        <div class="waves">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <audio src="audio/Mulholland - King Canyon.mp3" type="audio/mp3" controls></audio>
+                </div>
+            </div>
+        </div>
+        <i class="btn btn1"></i>
+        <i class="btn btn2"></i>
+        <i class="btn btn3"></i>
+        <i class="rightSideBtn"></i>
+    </div>
+
+
+
+    <script>
+        let popup = document.querySelector('.island-popup');
+        popup.onclick = function() {
+            popup.classList.toggle('active');
+        }
+    </script>
+    
+</body>
+</html>
